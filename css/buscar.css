@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../images/background-buscar.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 24px; background: rgba(0,0,0,0.35);
+}
+/* ← Solo ajustado tamaño para igualar al de categorías */
+nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 700; font-size: 1.05rem; }
+.logout { color: #ff6b6b !important; }
+.logo { display: flex; align-items: center; }
+.logo img { width: 80px; margin-right: 15px; }
+.logo span { font-size: 1.8em; font-weight: bold; }
+
+.search-section {
+  max-width: 1100px; margin: 35px auto; background-color: rgba(0,0,0,0.5);
+  border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 16px;
+}
+.search-bar { display: flex; gap: 12px; flex-wrap: wrap; }
+.search-bar input, .search-bar select {
+  padding: 12px 14px; font-size: 1rem; border-radius: 10px; border: none; flex: 1;
+}
+.search-bar button {
+  padding: 12px 18px; font-size: 1rem; border-radius: 10px; border: none;
+  background-color: #3399ff; color: white; font-weight: bold; cursor: pointer;
+  white-space: nowrap;
+}
+
+.results {
+  max-width: 1100px; margin: 25px auto 60px; background-color: rgba(0,0,0,0.45);
+  border-radius: 18px; padding: 16px 16px 6px;
+}
+.result-card {
+  background-color: rgba(0, 0, 0, 0.42); padding: 16px; margin: 12px 0;
+  border-radius: 14px; display: grid; grid-template-columns: 120px 1fr auto; gap: 16px;
+  align-items: center;
+}
+.result-card img {
+  width: 120px; height: 90px; border-radius: 8px; object-fit: cover; background: #222;
+}
+.result-card h4 { margin: 0 0 6px; font-size: 1.1rem; font-weight: bold; }
+.muted { opacity: .85; font-size: .95rem; }
+.pill {
+  display: inline-block; padding: 6px 10px; border-radius: 999px;
+  background: rgba(0,198,255,.15); border: 1px solid rgba(0,198,255,.35); font-size: .85rem;
+  margin-right: 6px;
+}
+.price { font-weight: 700; }
+.cta { display:flex; gap:8px; }
+.cta a, .cta button {
+  background-color: #3399ff; color: white; border: none; padding: 10px 16px; border-radius: 10px;
+  font-weight: bold; cursor: pointer; text-decoration: none;
+}
+.empty {
+  padding: 22px; text-align:center; opacity:.9;
+  background: rgba(255,255,255,.08); border: 1px dashed rgba(255,255,255,.25);
+  border-radius: 12px; margin: 12px 0;
+}

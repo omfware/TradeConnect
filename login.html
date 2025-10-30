@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingresar - TradeConnect</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+      <span><strong>Trade</strong>Connect</span>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="categorias.php">Categorías</a>
+      <a href="acerca.php">Acerca de</a>
+      <a href="login.html">Ingresar</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form action="login.php" method="POST">
+      <input type="text" name="usuario" placeholder="Correo o usuario" required>
+      <input type="password" name="contraseña" placeholder="Contraseña" required>
+      <button class="btn" type="submit">Ingresar</button>
+    </form>
+    <div class="switch">
+      ¿No tienes cuenta? <a href="register.html">Regístrate</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">
+      <a href="terminos.php">Términos</a>
+
+      <a href="#" class="contact-link">Contacto</a>
+      <div class="contact-tooltip">
+        📧 <a href="mailto:soporte@tradeconnect.com">soporte@tradeconnect.com</a><br>
+        📸 <a href="https://instagram.com/tradeconnect.uy" target="_blank">@tradeconnect.uy</a>
+      </div>
+
+      <a href="acerca.php">Acerca de</a>
+    </div>
+    <div class="footer-right">
+      © 2025 TradeConnect
+    </div>
+  </footer>
+</body>
+</html>

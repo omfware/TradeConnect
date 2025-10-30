@@ -1,0 +1,64 @@
+    body{
+      margin:0; font-family:'Segoe UI',sans-serif; color:#fff;
+      background:url('../images/background-blur.png') no-repeat center center fixed;
+      background-size:cover; min-height:100vh; display:flex; flex-direction:column;
+    }
+
+    header{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:16px 24px;
+      background:rgba(0,0,0,.35);
+      backdrop-filter: blur(6px);
+    }
+    nav a{
+      color:#fff; margin:0 16px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:1.05rem;
+    }
+
+    .logo{ display:flex; align-items:center; gap:12px }
+    .logo img{ width:80px; margin-right:15px }
+    .logo span{ font-size:1.8em; font-weight:800 }
+
+    .container{
+      background-color:rgba(0,0,0,.40);
+      padding:50px; border-radius:12px; width:400px; text-align:center; margin:auto;
+      box-shadow:0 10px 40px rgba(0,0,0,.25);
+      border:1px solid rgba(255,255,255,.15);
+    }
+    .container h2{ margin-bottom:20px }
+
+    input[type="text"], input[type="password"]{
+      width:100%; padding:12px; margin:12px 0; border-radius:6px; border:none; font-size:1em;
+      background:#fffffff2; color:#0a0f1a;
+    }
+    .btn{
+      width:100%; padding:12px; background:#3399ff; border:none; border-radius:8px;
+      color:#fff;
+      font-weight:800; font-size:1em; cursor:pointer; margin-top:10px;
+    }
+    .switch{ margin-top:15px; font-size:.9em }
+    .switch a{ color:#3399ff; text-decoration:none; font-weight:700 }
+
+    footer{
+      margin-top:auto; font-size:.9em; color:#fff; padding:20px;
+      display:flex; justify-content:space-between; align-items:center;
+      background:rgba(0,0,0,.35);
+      position:relative;
+    }
+    .footer-left a{ color:#fff; margin-right:10px; text-decoration:none; font-weight:600; }
+    .footer-left{ position:relative; display:inline-flex; align-items:center; }
+
+    /* Popover de Contacto */
+    .contact-tooltip{
+      position:absolute; bottom:50px; left:88px;
+      background:rgba(0,0,0,0.7); backdrop-filter:blur(8px);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:10px; padding:10px 16px;
+      display:none; flex-direction:column; gap:6px; white-space:nowrap;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4); z-index:10; font-size:.9em;
+    }
+    .footer-left a.contact-link:hover + .contact-tooltip,
+    .contact-tooltip:hover{ display:flex; }
+    .contact-tooltip a{ color:#5fd7ff; text-decoration:none; font-weight:700; }

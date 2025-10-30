@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeConnect</title>
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo" />
+      <span><strong>Trade</strong>Connect</span>
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="categorias.php">Categorías</a>
+      <a href="acerca.php">Acerca de</a>
+      <a href="login.html">Ingresar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="main-title" id="typing-title"></div>
+    <div class="sub-title">Explora servicios de proveedores de confianza</div>
+    <button class="start-button" id="start-btn">Comenzar</button>
+
+    <div class="search-bar-wrapper" id="buscar">
+      <div class="search-bar">
+        <form action="buscar.php" method="get">
+          <input type="text" name="q" placeholder="Buscar servicios (ej.: electricista, plomero, pintura)" required />
+          <input type="text" name="loc" placeholder="Ingresa ubicación (ej.: Montevideo, Canelones)" />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="categories">
+      <div class="category"><a href="buscar.php?cat=1"><div>⚡</div>Electricidad</a></div>
+      <div class="category"><a href="buscar.php?cat=2"><div>🛠️</div>Fontanería</a></div>
+      <div class="category"><a href="buscar.php?cat=3"><div>🧹</div>Limpieza</a></div>
+      <div class="category"><a href="buscar.php?cat=4"><div>🖌️</div>Pintura</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left">
+      <a href="terminos.php">Términos</a>
+
+      <!-- Hover Contacto -->
+      <a href="#" class="contact-link">Contacto</a>
+      <div class="contact-tooltip">
+        📧 <a href="mailto:soporte@tradeconnect.com">soporte@tradeconnect.com</a><br />
+        📸 <a href="https://instagram.com/tradeconnect.uy" target="_blank">@tradeconnect.uy</a>
+      </div>
+
+      <a href="acerca.php">Acerca de</a>
+    </div>
+    <div class="footer-right">
+      <a class="linkFooter" href="index.html">© 2025 TradeConnect</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('start-btn').addEventListener('click', () => {
+      window.location.href = "comenzar.php";
+    });
+
+    document.querySelectorAll('.search-bar input').forEach(inp => {
+      inp.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          inp.form.submit();
+        }
+      });
+    });
+  </script>
+  <script src="typing.js"></script>
+</body>
+</html>

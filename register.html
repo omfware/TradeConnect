@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - TradeConnect</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <span><strong>Trade</strong>Connect</span>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="acerca.html">Acerca de</a>
+            <a href="login.html">Ingresar</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Crear Cuenta</h2>
+        <form action="registro.php" method="POST">
+          <input type="text" name="nombre_completo" placeholder="Nombre completo" required>
+          <input type="email" name="correo" placeholder="Correo electrónico" required>
+          <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+
+          <input type="text" name="telefono" placeholder="Teléfono" required>
+          <input type="text" name="direccion" placeholder="Dirección" required>
+          <input type="password" name="contraseña" placeholder="Contraseña" required>
+          <input type="password" name="confirmar_contraseña" placeholder="Confirmar contraseña" required>
+
+          <select name="rol" required>
+            <option value="" disabled selected>Tipo de cuenta</option>
+            <option value="cliente">Cliente</option>
+            <option value="proveedor">Proveedor</option>
+          </select>
+
+          <button class="btn" type="submit">Registrarse</button>
+        </form>
+
+        <div class="switch">
+            ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <a href="#">Términos</a>
+            <a href="#">Contacto</a>
+            <a href="acerca.html">Acerca de</a>
+        </div>
+        <div class="footer-right">
+            2025 TradeConnect
+        </div>
+    </footer>
+</body>
+</html>

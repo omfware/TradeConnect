@@ -1,0 +1,70 @@
+:root{
+  --bg:#0a0f1a; --ink:#fff; --muted:#cfe9ff;
+  --card:#ffffff10; --bd:#ffffff28;
+  --accent:#2fd1ff; --danger:#ff8a8a;
+}
+
+/* Base */
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  color:var(--ink);
+  background:var(--bg) url('../images/background-blur.png') center/cover no-repeat fixed;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Header / Footer */
+header,footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 28px;
+  background:rgba(0,0,0,.38);
+}
+nav a{ color:#fff; margin:0 16px; text-decoration:none; font-weight:700 }
+.logout{ color:#ff6b6b; font-weight:800 }
+.logo{ display:flex; align-items:center; gap:12px }
+.logo img{ width:80px; margin-right:15px }
+.logo span{ font-size:1.8em; font-weight:800 }
+
+/* Layout */
+.main{ flex:1; max-width:900px; margin:0 auto; padding:42px 24px }
+.panel{ background:var(--card); border:1px solid var(--bd); border-radius:14px; padding:18px }
+
+/* Cabecera proveedor */
+.prov{ display:flex; gap:12px; align-items:center; margin-bottom:10px }
+.avatar{ width:60px; height:60px; border-radius:999px; overflow:hidden; border:2px solid rgba(255,255,255,.22); background:#fff }
+.avatar img{ width:100%; height:100%; object-fit:cover }
+.muted{ opacity:.85 }
+
+/* Mensajes de error */
+.error{
+  background:rgba(255,65,65,.16);
+  border:1px solid rgba(255,65,65,.35);
+  padding:12px; border-radius:10px; margin:12px 0;
+}
+
+/* Form */
+.label{ display:block; margin:8px 0 6px; font-weight:700 }
+textarea{
+  width:100%; min-height:120px; padding:12px;
+  border:none; border-radius:10px;
+  background:rgba(255,255,255,.95); color:#0a0f1a;
+}
+.row-actions{ display:flex; gap:10px; margin-top:14px }
+
+/* Botones */
+.btn{ border:none; border-radius:10px; padding:10px 14px; font-weight:800; cursor:pointer; font-size:1rem; text-decoration:none }
+.btn-outline{ background:transparent; border:1px solid rgba(255,255,255,.35); color:#fff }
+.btn-accent{ background:var(--accent); color:#001018 }
+
+/* Estrellas */
+.stars{ display:flex; gap:8px; margin:10px 0 }
+.stars input{ display:none }
+.stars label{ font-size:28px; cursor:pointer; filter:grayscale(1); opacity:.6; transition:.15s }
+.stars input:checked ~ label{ filter:none; opacity:1 }
+.stars label:hover, .stars label:hover ~ label{ filter:none; opacity:1 }
+/* Para que el hover pinte hacia la izquierda */
+.stars.rtl{ direction:rtl }

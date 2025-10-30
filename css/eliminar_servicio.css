@@ -1,0 +1,56 @@
+  html,body{height:100%}
+  body{
+    margin:0; font-family:'Segoe UI',sans-serif; color:#fff; font-size:18px;
+    min-height:100vh;
+    background:#0a0f1a url('../images/background-blur.png') center/cover no-repeat fixed;
+    display:flex; flex-direction:column;
+  }
+  header, footer{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:16px 24px; background:rgba(0,0,0,.35);
+  }
+  nav a{color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; font-size:1.05rem}
+  .logout{color:#ff6b6b; font-weight:bold}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo img{width:80px;margin-right:15px}
+  .logo span{font-size:1.8em;font-weight:bold}
+  footer a,footer a:visited,footer a:hover,footer a:active{color:#fff;text-decoration:none;margin-right:12px;font-size:.95rem}
+
+  .wrap{flex:1;max-width:1100px;margin:0 auto;padding:40px 24px;box-sizing:border-box}
+  h1{margin:0 0 8px}
+  .muted{opacity:.85}
+
+  .box{
+    margin-top:18px;
+    background:rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:24px;
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap:22px;
+  }
+  .info p{margin:.35rem 0}
+  .label{opacity:.8}
+  .value{font-weight:600}
+  .imgbox{
+    border-radius:14px; overflow:hidden;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    display:flex; align-items:center; justify-content:center;
+    min-height:260px;
+  }
+  .imgbox img{width:100%; height:auto; display:block; object-fit:cover}
+  .confirm{
+    margin-top:16px; padding:16px;
+    background:rgba(255, 128, 128, .12);
+    border:1px solid rgba(255, 128, 128, .35);
+    border-radius:12px;
+  }
+  .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
+  .btn{
+    border:none; border-radius:10px; padding:12px 18px; font-weight:700; cursor:pointer; font-size:1.03rem; text-decoration:none;
+  }
+  .btn-success{background:#2ecc71; color:#001a0d}
+  .btn-danger{background:#ff5c5c; color:#fff}
+  .btn-outline{background:transparent; border:1px solid rgba(255,255,255,.35); color:#fff}

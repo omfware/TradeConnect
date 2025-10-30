@@ -1,0 +1,42 @@
+  :root{ --bg:#0a0f1a; --ink:#fff; --muted:#cfe9ff; --card:#ffffff0f; --card-bd:#ffffff24; --primary:#00c6ff; --primary-ink:#001018; --danger:#ff6b6b; }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{
+    margin:0; font-family:'Segoe UI',sans-serif; color:var(--ink);
+    background:var(--bg) url('../images/background-blur.png') center/cover no-repeat fixed;
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  header,footer{display:flex;justify-content:space-between;align-items:center;padding:16px 28px;background:rgba(0,0,0,.38);backdrop-filter:blur(6px)}
+  nav a{color:#fff;margin:0 16px;text-decoration:none;font-weight:700;font-size:1.05rem}
+  .logout{color:var(--danger);font-weight:800}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo img{width:80px;margin-right:15px}
+  .logo span{font-size:1.8em;font-weight:800}
+
+  .main{flex:1;max-width:1100px;margin:0 auto;padding:42px 24px}
+  .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+  @media (max-width:1000px){ .grid{grid-template-columns:1fr} }
+
+  .panel{ background:var(--card); border:1px solid var(--card-bd); border-radius:14px; padding:18px; overflow:hidden; }
+  h1{margin:0 0 10px;color:#34d1ff}
+  label{font-weight:700;display:block;margin:10px 0 6px}
+
+  input[type="date"], input[type="text"], textarea{
+    display:block; width:100%; max-width:100%;
+    padding:12px 14px; border:none; outline:none; border-radius:10px;
+    background:rgba(255,255,255,.95); color:#0a0f1a; font-size:1.02rem;
+  }
+  #hora{ letter-spacing:.5px; }
+  textarea{ height:140px; resize:none; }
+
+  .btn{border:none;border-radius:10px;padding:12px 16px;font-weight:800;cursor:pointer;font-size:1rem;text-decoration:none}
+  .btn-primary{background:var(--primary);color:var(--primary-ink)}
+  .btn-outline{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+  .prov{display:flex;gap:12px;align-items:center}
+  .avatar{width:64px;height:64px;border-radius:999px;overflow:hidden;border:2px solid rgba(255,255,255,.25);background:#fff}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+
+  .error{background:rgba(255,65,65,.16);border:1px solid rgba(255,65,65,.35);padding:12px 14px;border-radius:10px;margin:12px 0}
+  .info {background:rgba(0,198,255,.18);border:1px solid rgba(0,198,255,.45);padding:12px 14px;border-radius:10px;margin:12px 0;color:#cfefff}
+  .muted{opacity:.9}
