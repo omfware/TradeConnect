@@ -123,7 +123,7 @@ docker compose up -d --build
 docker compose ps
 
 9)acceder a la web
-"http://Ip del servidor:8080/"
+"http: Ip del servidor:8080"
 
    
 
